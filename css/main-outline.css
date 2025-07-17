@@ -1,0 +1,111 @@
+/* PAGE SETUP */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+/* media query to fix left side of title-bar getting cut off when screen smaller than min width*/
+@media only screen and (max-width: 860px) {
+    body {
+        align-items: flex-start;
+    }
+}
+/* PAGE SETUP */
+
+/* ******************************************************** */
+
+/* HEADER */
+header {
+    border: red 2px solid;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px; /* exact width, min-max subject to change*/
+    width: 80%;
+    min-width: fit-content;
+    height: 260px;
+
+}
+
+#title-bar {
+    border: 2px solid black;
+    display: flex;
+    height: 220px;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 5px;
+
+}
+
+#title {
+    background-color: slateblue;
+    border: 1px solid red;
+    width: 600px; /* subject to change based on size of title artwork */
+    height: 180px;
+}
+
+#profile-box {
+    background-color: slategray;
+    width: 220px;
+    border: 1px solid red;
+    align-self: flex-end;
+    height: 150px;
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 30px 70px 1fr;
+    grid-template-areas: 
+    "profile-pic affiliation"
+    "profile-pic money"
+    "username username";
+}
+
+.profile-pic {
+    background-color: white;
+    grid-area: profile-pic;
+}
+
+.affiliation {
+    grid-area: affiliation;
+    background-color: antiquewhite;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: money;
+    background-color: azure;
+}
+
+.username {
+    grid-area: username;
+    background-color: beige;
+}
+
+nav {
+    width: 100%;
+    padding: 5px;
+    background-color: darkslategrey;
+    height: 40px;
+    border: 2px blue solid;
+}
+/* HEADER */
+
+/* ******************************************************** */
