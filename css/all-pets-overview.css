@@ -1,0 +1,147 @@
+/* PAGE SETUP */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+/* media query to fix left side of title-bar getting cut off when screen smaller than min width*/
+@media only screen and (max-width: 860px) {
+    body {
+        align-items: flex-start;
+    }
+}
+
+main {
+    border: red 2px solid;
+    max-width: 1200px; /* exact width, min-max subject to change*/
+    width: 80%;
+    min-width: 860px;
+    padding: 10px;
+}
+/* PAGE SETUP */
+
+/* ******************************************************** */
+
+/* HEADER */
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+#page-routing {
+    width: 100%;
+    background-color: palegreen;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.active, .inactive {
+    border: 2px black dotted;
+}
+
+.active, .total, .inactive {
+    height: 100px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px black solid;
+}
+
+.selected {
+    background-color: aliceblue;
+    border: 2px black solid;
+    border-bottom: none;
+}
+/* HEADER */
+
+/* ******************************************************** */
+
+/* PAGE */
+.page-content {
+    background-color: aliceblue;
+    border: 2px black solid;
+    border-top: none;
+}
+
+.internal-pages {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+
+}
+
+.internal-pages > div {
+    background-color: burlywood;
+    height: 30px;
+    width: 30px;
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pets {
+    background-color: cornsilk;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.pet {
+    display: flex;
+    flex-direction: column;
+    border: 2px red solid;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px;
+}
+
+.pet-img {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+
+.pet-name {
+    height: 30px;
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-attributes {
+    height: 60px;
+    background-color: coral;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

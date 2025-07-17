@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Overview</title>
+    <link rel="stylesheet" href="/css/all-pets-overview.css">
 </head>
 <body>
     <!-- Page concept excluding header and footer elements repeated across all pages -->
@@ -12,96 +13,107 @@
             <nav id="page-routing" aria-labelledby="page-route">Page Routing > Pets</nav>
             <!-- active pets being those that can perform various action -->
             <!-- inactive pets being those that are 'archived' or temporarily removed from active cats exact specifics tbd -->
-            <div class="active">Active Pets (x/y)</div> <!-- where x is current amount and y is max amount -->
-            <div class="total"> Total (x/y)</div> <!-- where x is current amount and y is max amount -->
-            <div class="inactive">Inactive Pets (x/y)</div> <!-- where x is current amount and y is max amount -->
+            <div class="active selected">
+                <p>Active Pets</p>
+                <p>(x/y)</p>
+            </div> <!-- where x is current amount and y is max amount -->
+            <div class="total">
+                <p></p>Total</p>
+                <p>(x/y)</p>
+            </div> <!-- where x is current amount and y is max amount -->
+            <div class="inactive">
+                <p></p>Inactive Pets</p>
+                <p>(x/y)</p>
+            </div> <!-- where x is current amount and y is max amount -->
         </header>
-        <nav class="internal-pages" aria-labelledby="internal-pages-top">
-            <div><</div> <!-- convert to buttons?? -->
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>...</div>
-            <div>...</div>
-            <div>n-2</div>            
-            <div>n-1</div>
-            <div>n</div>
-            <div>></div>
-        </nav>
-        <div class="pets">
-            <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
+        <div class="page-content">
+            <nav class="internal-pages" aria-labelledby="internal-pages-top">
+                <div><</div> <!-- convert to buttons?? -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>...</div>
+                <div>...</div>
+                <div>n-2</div>            
+                <div>n-1</div>
+                <div>n</div>
+                <div>></div>
+            </nav>
+            <div class="pets">
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
+                <div class="pet">
+                    <div class="pet-img">pet image</div> <!-- will be converted to img -->
+                    <div class="pet-name">Name</div>
+                    <div class="pet-attributes">useful info</div>
+                </div>
             </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
-             <div class="pet">
-                <div class="pet-img">pet image</div> <!-- will be converted to img -->
-                <div class="pet-name">Name</div>
-                <div class="pet-attributes">useful info</div>
-            </div>
+            <nav class="internal-pages" aria-labelledby="internal-pages-bottom">
+                <div><</div> <!-- convert to buttons?? -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>...</div>
+                <div>...</div>
+                <div>n-2</div>            
+                <div>n-1</div>
+                <div>n</div>
+                <div>></div>
+            </nav>
         </div>
-        <nav class="internal-pages" aria-labelledby="internal-pages-bottom">
-            <div><</div> <!-- convert to buttons?? -->
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>...</div>
-            <div>...</div>
-            <div>n-2</div>            
-            <div>n-1</div>
-            <div>n</div>
-            <div>></div>
-        </nav>
     </main>
 </body>
 </html>
