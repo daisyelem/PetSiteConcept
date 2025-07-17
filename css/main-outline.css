@@ -124,5 +124,35 @@ main {
 /* ******************************************************** */
 
 /* FOOTER */
+footer {
+    max-width: 1200px; /* exact width, min-max subject to change*/
+    width: 80%;
+    min-width: 860px;
+    border: 2px red solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
 
+.ads {
+    border: 2px solid black;
+    width: 80%;
+    height: 150px;
+    background-color: aliceblue;
+}
+
+#disclaimer {
+    border: 2px solid black;
+    width: 80%;
+    height: 50px;
+    background-color: peachpuff;
+}
+
+#copyright {
+    border: 2px solid black;
+    width: 80%;
+    height: 30px;
+    background-color: lavender;
+}
 /* FOOTER */
