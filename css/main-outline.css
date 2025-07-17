@@ -35,7 +35,7 @@ header {
     flex-direction: column;
     max-width: 1200px; /* exact width, min-max subject to change*/
     width: 80%;
-    min-width: fit-content;
+    min-width: 860px;
     height: 260px;
 
 }
@@ -109,3 +109,20 @@ nav {
 /* HEADER */
 
 /* ******************************************************** */
+
+/* MAIN */
+main {
+    border: greenyellow solid 2px;
+    background-color: lemonchiffon;
+    max-width: 1200px; /* exact width, min-max subject to change*/
+    width: 80%;
+    min-width: 860px;
+    height: 1000px;
+}
+/* MAIN */
+
+/* ******************************************************** */
+
+/* FOOTER */
+
+/* FOOTER */
